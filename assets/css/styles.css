@@ -290,16 +290,16 @@ img{
   z-index: var(--z-back);
 }
 .skills__html{
-  width: 60%;
+  width: 80%;
 }
-.skills__css{
-  width: 85%;
-}
-.skills__js{
+.skills__tux{
   width: 65%;
 }
-.skills__ux{
-  width: 85%;
+.skills__js{
+  width: 30%;
+}
+.skills__cloud{
+  width: 50%;
 }
 .skills__img{
   border-radius: .5rem;
