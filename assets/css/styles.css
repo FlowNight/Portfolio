@@ -59,7 +59,7 @@ html {
 }
 
 body {
-  background-color: rgb(0,0,0,0.9);
+  background-color: rgb(0, 0, 0, 0.9);
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -132,7 +132,7 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: rgb(0,0,0,0.6);
+  background-color: rgb(0, 0, 0, 0.6);
   box-shadow: 0 1px 4px rgba(146, 161, 176, .15);
 }
 
@@ -153,7 +153,7 @@ img {
     width: 80%;
     height: 100%;
     padding: 2rem;
-    background-color: rgb(0,0,0,0.7);
+    background-color: rgb(0, 0, 0, 0.7);
     transition: .5s;
   }
 }
@@ -258,7 +258,8 @@ img {
   font-weight: var(--font-semi);
   border-radius: .5rem;
 }
-.button__toggle{
+
+.button__toggle {
   display: inline-block;
   background-color: var(--first-color);
   color: #fff;
@@ -270,7 +271,7 @@ img {
 }
 
 .button:hover {
-  box-shadow: 0 10px 36px rgb(255,255,255,0.1);
+  box-shadow: 0 10px 36px rgb(255, 255, 255, 0.1);
 }
 
 /* ===== ABOUT =====*/
@@ -395,16 +396,20 @@ img {
 }
 
 .work__img img {
-  transition: 1s;
+  transition: 0.5s;
   cursor: pointer;
 }
 
 .work__img img:hover {
-  transform: scale(1.1);
+  transform: scale(1.25);
 }
-.hr{
+.p_work {
+  text-align: center;
+}
+.hr {
   margin: 5%;
 }
+
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
@@ -428,7 +433,7 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color:rgb(105,105,105,0.2);
+  background-color: rgb(105, 105, 105, 0.2);
   color: var(--second-color);
   text-align: center;
   font-weight: var(--font-semi);
