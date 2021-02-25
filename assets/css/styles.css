@@ -249,6 +249,11 @@ img {
   width: 295px;
 }
 
+.small_txt {
+  font-style: oblique;
+  font-size: 42px;
+}
+
 /*BUTTONS*/
 .button {
   display: inline-block;
@@ -315,8 +320,6 @@ img {
   font-weight: var(--font-semi);
   padding: .5rem 1rem;
   margin-bottom: var(--mb-4);
-  border-radius: .5rem;
-  box-shadow: 0 4px 25px rgba(14, 36, 49, .15);
 }
 
 .skills__icon {
