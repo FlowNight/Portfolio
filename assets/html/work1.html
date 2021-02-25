@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--===== Fichiers CSS =====-->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/osm.css">
+
+    <!--===== BOX ICONS =====-->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--===== FONT AWESOME =====-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+
+    <!--===== Lien OpenStreetMap =====-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css">
+
+    <title> PHELIPPON Alexis - Portfolio | 231 East Street </title>
+</head>
+
+<body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo"> Alexis PHELIPPON </a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active"> Accueil </a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link"> À Propos </a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link"> Missions </a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link"> Expériences </a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link"> Contact </a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main">
+
+        <!--===== ACCUEIL =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title"> 231 <span class="home__title-color"> East </span> Street <br> Équipier
+                    Polyvalent </h1>
+
+                <a href="https://www.231-east.fr/" target="_blank" class="button"> Site Web <i
+                        class="fas fa-chevron-circle-right"></i> </a>
+                <a href="../../index.html" target="_blank" class="button__toggle"><i
+                        class="fas fa-chevron-circle-left"></i> Retour </a>
+            </div>
+            <div class="home__img">
+                <img src="../img/231_East_Street.gif" alt="">
+            </div>
+        </section>
+
+        <hr class="hr">
+
+        <!--===== À PROPOS =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title"> À Propos </h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="../img/work6.jpg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle"> 231 East Street </h2>
+                    <p class="about__text"> UN BURGER AUTHENTIQUEMENT NEW-YORKAIS
+                        231 East Street, clin d’oeil à la première adresse de la Factory d’Andy Warhol à New-York.
+
+                        231 East Street propose partout en France le vrai, le seul, le succulent Gourmet Burger
+                        new-yorkais, comme si on y était, dans un univers chaleureux et urbain, tout droit sorti de la
+                        Big Apple. Ici, point d’excentricités : l’enseigne mise sur une simplicité gustative centrée sur
+                        des produits de haute qualité et leur parfait assemblage. SEJE BURGER, société à responsabilité
+                        limitée
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <hr class="hr">
+
+        <!--===== COMPÉTENCES =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title"> Missions </h2>
+            <!-- Compétences Professionnelles -->
+            <div class="skills__container bd-grid">
+                <div>
+                    <h2 class="skills__subtitle"> Compétences Professionnelles </h2>
+                    <p class="skills__text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos excepturi
+                        explicabo qui fugiat officiis iusto magni provident aspernatur corporis. Consequatur quasi porro
+                        expedita a voluptatibus, odit dolorem pariatur sed incidunt? </p>
+                </div>
+                <div>
+                    <img src="../img/t_work6.jpg" alt="">
+                </div>
+                <div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='far fa-comments skills__icon'></i>
+                            <span class="skills__name"> # </span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='fas fa-layer-group skills__icon'></i>
+                            <span class="skills__name"> # </span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='bx bx-spreadsheet skills__icon'></i>
+                            <span class="skills__name"> # </span>
+                        </div>
+                    </div>
+                    <div class="skills__data">
+                        <div class="skills__names">
+                            <i class='fas fa-fist-raised skills__icon'></i>
+                            <span class="skills__name"> # </span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <hr class="hr">
+
+        <!--===== EXPÉRIENCES =====-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title"> Expériences </h2>
+            <div class="skills__container bd-grid">
+                <div>
+                    <p class="skills__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit officiis,
+                        odit
+                        ut eaque ea doloribus
+                        ipsam nostrum accusantium earum animi voluptates est sed deserunt deleniti blanditiis.
+                        Repudiandae
+                        unde
+                        eum non.</p>
+                </div>
+
+                <div>
+                    <img src="../img/e_work6.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <hr class="hr">
+
+        <!--===== CONTACT =====-->
+
+        <section class="contact section" id="contact">
+
+            <h2 class="section-title"> Contactez-moi </h2>
+
+            <div class="contact__container bd-grid">
+                <div id="myMap"></div>
+                <form action="" class="contact__form">
+                    <input type="text" placeholder="Nom | Prénom" class="contact__input">
+                    <input type="mail" placeholder="Adresse mail" class="contact__input">
+                    <textarea name="" id="" placeholder="Laissez moi un message." cols="0" rows="10"
+                        class="contact__input"></textarea>
+                    <input type="button" value="Envoyer" class="contact__button button">
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title"> Alexis PHELIPPON </p>
+
+        <div class="footer__social">
+            <a href="https://www.facebook.com/Phelippon.Alexis/" target="_blank" class="home__social-icon"><i
+                    class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/alex.phlpn/" target="_blank" class="home__social-icon"><i
+                    class='bx bxl-instagram'></i></a>
+            <a href="https://twitter.com/FlowNigth" target="_blank" class="home__social-icon"><i
+                    class='bx bxl-twitter'></i></a>
+            <a href="https://www.linkedin.com/in/alexis-phelippon-4b8470179/" target="_blank"
+                class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/FlowNight" target="_blank" class="home__social-icon"><i
+                    class='bx bxl-github'></i></a>
+        </div>
+        <p>&#169; Portfolio | 2021 </p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== Fichiers JS =====-->
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <script src="../js/osm.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
