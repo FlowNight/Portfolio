@@ -1,6 +1,4 @@
-<?php 
-
-?>
+<?php include 'assets/php/mail.php'; ?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -381,6 +379,9 @@
 
         <!--===== CONTACT =====-->
 
+        <!-- alert messages start -->
+        <?php echo $alert; ?>
+
         <section class="contact section" id="contact">
 
             <h2 class="section-title"> Contactez-moi </h2>
@@ -429,6 +430,11 @@
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
     <script src="assets/js/osm.js"></script>
     <script src="assets/js/main.js"></script>
+    <script type="text/javascript">
+         if(window.history.replaceState){
+      window.history.replaceState(null, null, window.location.href);
+    }
+    </script>
 </body>
 
 </html>

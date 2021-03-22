@@ -28,11 +28,11 @@ if(isset($_POST['submit'])){
 
     $mail->isHTML(true);
     $mail->Subject = 'Message Received (Contact Page)';
-    $mail->Body = "<h3>Name : $name <br>Email: $email <br>Message : $message</h3>";
+    $mail->Body = "<h3> Nom | Prénom : $name <br> E-mail : $email <br> Message : $message </h3>";
 
     $mail->send();
     $alert = '<div class="alert-success">
-                 <span>Message Sent! Thank you for contacting us.</span>
+                 <span> Merci, j\'ai bien reçu votre message ! </span>
                 </div>';
   } catch (Exception $e){
     $alert = '<div class="alert-error">
@@ -40,8 +40,4 @@ if(isset($_POST['submit'])){
               </div>';
   }
 }
-?>
-      
-
-
 ?>
