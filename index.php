@@ -1,8 +1,6 @@
-<?php include_once("index.html")
+<?php 
 
- include 'assets/php/mail.php'; 
+include_once("index.html")
 
- echo $alert; 
- 
- ?>
+?>
 

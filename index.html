@@ -9,6 +9,14 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/osm.css">
 
+    <!--===== INTÉGRATION EmailJS =====-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"> </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_7f35b1OScJ48zJHWAddmv");
+        })();
+    </script>
+
     <!--===== BOX ICONS =====-->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
@@ -362,7 +370,7 @@
                     <a href="assets/html/work8.html">
                         <img src="assets/img/work8.jpg" alt="231 East Street">
                     </a>
-                    <p class="p_work"> 231 East Street |  <i class="far fa-clock"></i> 1 an 4 mois</p>
+                    <p class="p_work"> 231 East Street | <i class="far fa-clock"></i> 1 an 4 mois</p>
                 </div>
                 <div class="work__img">
                     <a href="assets/html/work9.html">
@@ -377,20 +385,23 @@
 
         <!--===== CONTACT =====-->
 
-        <!-- alert messages start -->
-       
+        <!-- alert messages success -->
+
+        <!-- alert messages error -->
+
         <section class="contact section" id="contact">
 
             <h2 class="section-title"> Contactez-moi </h2>
 
             <div class="contact__container bd-grid">
                 <div id="myMap"></div>
-                <form action="" class="contact__form">
-                    <input type="text" name="name" placeholder="Nom | Prénom" class="contact__input">
-                    <input type="mail" name="email" placeholder="Adresse mail" class="contact__input">
-                    <textarea name="message" id="" placeholder="Laissez moi un message." cols="0" rows="10"
+                <form class="contact__form">
+                    <input type="text" name="name" placeholder="Nom | Prénom" class="contact__input" id="name">
+                    <input type="mail" name="email" placeholder="Adresse mail" class="contact__input" id="email">
+                    <textarea name="message" id="message" placeholder="Laissez moi un message." cols="0" rows="10"
                         class="contact__input"></textarea>
-                    <input type="submit" name="submit" value="Envoyer" class="contact__button button">
+                    <input onclick='sendEmail()' type="button" name="submit" value="Envoyer"
+                        class="contact__button button">
                 </form>
             </div>
 
@@ -425,13 +436,10 @@
         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
         crossorigin=""></script>
     <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
-    <script src="assets/js/osm.js"></script>
+    <script src="assets/js/mail.js"></script>
     <script src="assets/js/main.js"></script>
-    <script type="text/javascript">
-         if(window.history.replaceState){
-      window.history.replaceState(null, null, window.location.href);
-    }
-    </script>
+    <script src="assets/js/osm.js"></script>
+
 </body>
 
 </html>
